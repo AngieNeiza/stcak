@@ -1,0 +1,34 @@
+STACK CLUB - Instrucciones rápidas
+====================================
+
+ARCHIVOS
+- index.html ............... la página (con sonido al escribir)
+- correo-bienvenida.html ... la plantilla del correo para Brevo
+- img/ ..................... los 8 GIF animados del correo (no cambiarles el nombre)
+
+PASO 1. Subir la página
+- Sube index.html y la carpeta img/ completa a tu repo de GitHub (en la raíz).
+- Activa GitHub Pages: Settings > Pages > Deploy from a branch > main > / (root) > Save.
+- Tu dirección quedará así: https://TU-USUARIO.github.io/TU-REPO/
+
+PASO 2. Arreglar el correo
+- Abre correo-bienvenida.html y reemplaza en todo el archivo (Ctrl+H):
+    TU-USUARIO  ->  tu usuario de GitHub (ej: juliana061)
+    TU-REPO     ->  el nombre de tu repo
+- Son 11 cambios. Así se ven los GIF y funcionan los botones.
+
+PASO 3. Brevo
+- Plantillas > Crear plantilla > Email > HTML custom code > pega correo-bienvenida.html.
+  Ponle remitente, asunto (ej: [OK] Build successful: ya eres parte de Stack Club)
+  y dale Save & activate.
+- Formularios > Crear formulario > elige tu lista > en Settings marca
+  "Simple confirmation email" y escoge tu plantilla > Next hasta Share.
+- En Share copia la URL que termina en sibforms.com/serve/...
+
+PASO 4. Conectar la página
+- Abre index.html, busca:  PEGA_AQUI_TU_URL_DE_BREVO
+- Reemplázalo por la URL del paso 3 (sin quitar las comillas) y vuelve a subir index.html.
+
+PROBAR
+- Regístrate con un correo nuevo y revisa Spam y Promociones.
+- La página pide presionar una tecla al entrar: es para activar el sonido.
